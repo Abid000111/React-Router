@@ -1,16 +1,16 @@
-"use client";
-
 import React from "react";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
-import Home from "./Components/Home/Home";
+import { Outlet } from "react-router-dom";
 
-const page = () => {
+const Root = () => {
 	return (
 		<>
-			
+			<Header />
+            <Outlet/>
+			<Footer />
 		</>
 	);
 };
 
-export default page;
+export default Root;
